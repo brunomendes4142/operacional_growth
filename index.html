@@ -3087,7 +3087,7 @@ function openMondayConfig(){
   d.innerHTML = `
     <div class="modal" style="width:min(480px,92vw)">
       <div class="modal-title">⚙️ Configurar Monday.com</div>
-      <div class="modal-sub">Token de API e ID do board</div>
+      <div class="modal-sub">Acesse <a href="https://monday.com/developers/v2/try-it-yourself" target="_blank" style="color:var(--blue)">monday.com/developers</a> → gere seu token de API pessoal</div>
       <div class="mfield">
         <label>Token de API</label>
         <input id="mcfg_token" type="password" placeholder="eyJhbGci..." value="${getMondayToken()}" style="font-family:monospace;font-size:11px">
@@ -3321,7 +3321,6 @@ if(_migrated>0) showSyncToast(`✅ Checklist reordenado em ${_migrated} atividad
 
 /* ─── INIT MONDAY ─── */
 (function initMonday(){
-  setMondayToken('eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjYzODEyNzAxNywiYWFpIjoxMSwidWlkIjo3OTUxOTIwOSwiaWFkIjoiMjAyNi0wMy0yNlQxMzowNzo0MC4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTcwMzc5NzEsInJnbiI6InVzZTEifQ.U5RszUdwE99XtpuA_qy92ABfXJIuvN2DidfQtwL9W2M');
   setMondayBoardId('18408136350');
 
   // Sempre limpar e recarregar dos dados embutidos no HTML
